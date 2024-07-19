@@ -60,6 +60,10 @@ img {
   text-align: center;
   padding: 1.5rem;
 }
+a {
+  color: var(--color-white);
+  text-decoration: none;
+}
 .github {
   background-color: var(--color-grey-700);
   color: var(--color-white);
