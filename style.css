@@ -16,6 +16,7 @@
 body {
   max-width: 100vm;
   min-height: 70vh;
+  /* min-height: 100vh; */
   background-color: var(--color-grey-900);
   margin: 0;
 }
@@ -63,6 +64,10 @@ img {
 a {
   color: var(--color-white);
   text-decoration: none;
+}
+a:active {
+  transform: scale(0.95);
+  background-color: var(--color-grey-700);
 }
 .github {
   background-color: var(--color-grey-700);
@@ -113,4 +118,37 @@ a {
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color-grey-900);
+  }
+  .container {
+    border-radius: 1em;
+    overflow: hidden;
+    width: 40%;
+    background-color: var(gray-800);
+    min-height: fit-content;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color-grey-900);
+  }
+  .container {
+    border-radius: 1em;
+    overflow: hidden;
+    width: 60%;
+    background-color: var(gray-800);
+    min-height: fit-content;
+  }
 }
